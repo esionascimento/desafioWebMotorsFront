@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  text-decoration: none;
 }
 
 .box {
@@ -13,21 +14,36 @@
 
 }
 
+.ativar {
+  border-bottom: 3px solid red;
+}
+
 .boxEscolher {
+  margin-top: 20px;
+  display: flex;
+}
+
+.ad {
   display: flex;
 }
 
 a {
   display: flex;
+  padding-bottom: 10px;
   margin: 0;
 }
 
 .motoCar {
-  width: 80px;
-  height: 20px;
+  padding-top: 17px;
+  margin: 0 15px;
+  height: 14px;
 }
 
 .logo {
   width: 180px;
   height: 50px;
+}
+
+.textComprar {
+  font: 10px Arial;
 }
