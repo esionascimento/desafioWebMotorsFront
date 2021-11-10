@@ -1,9 +1,11 @@
 import './App.css';
 
+import { Comprar } from './components/Comprar';
+
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Comprar />
     </div>
   );
 }

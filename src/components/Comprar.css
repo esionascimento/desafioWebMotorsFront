@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+.box {
+  width: 933px;
+  height: 312px;
+  margin: 10px auto;
+  border: 1px solid silver;
+}
+
+.boxLogo {
+
+}
+
+.boxEscolher {
+  display: flex;
+}
+
+a {
+  display: flex;
+  margin: 0;
+}
+
+.motoCar {
+  width: 80px;
+  height: 20px;
+}
+
+.logo {
+  width: 180px;
+  height: 50px;
+}
