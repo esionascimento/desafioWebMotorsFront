@@ -9,7 +9,7 @@ export const Comprar = () => {
       <header className="boxLogo">
         <img className="logo" src={ logo } alt="logo da empresa web motors"/>
       </header>
-      <div>
+      <div className="boxComponent">
         <div className="boxEscolher">
           <a className="ativar"href="http">
             <div className="ad carro">
@@ -30,15 +30,9 @@ export const Comprar = () => {
             </div>
           </a>
         </div>
-        <a className="ativar"href="http">
-            <div className="ad carro">
-              <img className="motoCar" src="https://cdn.webmotors.com.br/webmotors/Content/assets/img/car_icon_gray.svg" alt="logo da empresa web motors"/>
-              <div>
-                <p className="textComprar">COMPRAR</p>
-                <bold>CARROS</bold>
-              </div>
-            </div>
-          </a>
+        <a className="vender"href="http">
+          <p className="venderCarro">Vender meu carro</p>
+        </a>
       </div>
       <div></div>
       <div></div>

@@ -47,3 +47,23 @@ a {
 .textComprar {
   font: 10px Arial;
 }
+
+.boxComponent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vender {
+  width: 200px;
+  text-align: center;
+  float: right; 
+}
+
+.venderCarro {
+  border-color: #f89e00;
+  margin: auto 0;
+  padding: 10px 20px;
+  color: #f89e00;
+  border-style: solid;
+  border-radius: 5px;
+}
