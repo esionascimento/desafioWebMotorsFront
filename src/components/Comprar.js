@@ -1,12 +1,13 @@
 import React from 'react';
 
 import logo from '../img/logo.png';
+import { BoxConfigurar } from './BoxConfigurar';
 import './Comprar.css';
 
 export const Comprar = () => {
   return (
     <div className="box">
-      <header className="boxLogo">
+      <header>
         <img className="logo" src={ logo } alt="logo da empresa web motors"/>
       </header>
       <div className="boxComponent">
@@ -34,9 +35,7 @@ export const Comprar = () => {
           <p className="venderCarro">Vender meu carro</p>
         </a>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <BoxConfigurar />
     </div>
   );
 };
