@@ -5,15 +5,18 @@ interface Props {
 }
 
 export const Box = styled.div `
-  margin: 0;
-  text-decoration: none;
+  width: 933px;
+  height: 312px;
+  margin: 10px auto;
+  border: 1px solid silver;
 `;
 
 export const TagA = styled.a<Props>`
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  width: 150px;
   margin: 0;
-  border-bottom: ${(props) => props.if && `3px solid red`}
+  border-bottom: ${(props) => props.if ? `3px solid red` : `none`}
 `;
 
 export const BoxComponent = styled.div `
@@ -31,7 +34,7 @@ export const AdFlex = styled.div `
 `;
 
 export const MotoCar = styled.img `
-  padding-top: 17px;
+  padding-top: 15px;
   margin: 0 15px;
   height: 14px;
 `;
@@ -41,28 +44,17 @@ export const Logo = styled.img `
   height: 50px;
 `;
 
-/* 
-.ativar {
-  border-bottom: 3px solid red;
-}
-
-a {
-  display: flex;
-  padding-bottom: 10px;
-  margin: 0;
-}
-
-.textComprar {
+export const TextComprar = styled.p `
   font: 10px Arial;
-}
+`;
 
-.vender {
+export const Vender = styled.a `
   width: 200px;
   text-align: center;
   float: right; 
-}
+`;
 
-.venderCarro {
+export const VenderCarro = styled.p `
   border-color: #f89e00;
   margin: auto 0;
   padding: 10px 20px;
@@ -73,4 +65,4 @@ a {
     margin: 0;
     text-decoration: none;
   }
-} */
+`;

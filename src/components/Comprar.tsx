@@ -5,10 +5,12 @@ import { BoxConfigurar } from './BoxConfigurar';
 import * as S from './ts/Comprar';
 
 export const Comprar = () => {
-  const [active, setActive] = useState(false);
+  const [activeCarro, setActiveCarro] = useState(true);
+  const [activeMoto, setActiveMoto] = useState(false);
 
-  function ativar() {
-    setActive(true);
+  function ativar(a: any, b: any) {
+    setActiveCarro(a);
+    setActiveMoto(b)
   }
 
   return (
@@ -18,28 +20,29 @@ export const Comprar = () => {
       </header>
       <S.BoxComponent>
         <S.BoxEscolher className="boxEscolher">
-          <S.TagA if={!active} href="http" onClick={ativar}>
+          <S.TagA if={activeCarro} onClick={() => ativar(true, false)}>
             <S.AdFlex className="ad carro">
               <S.MotoCar className="MotoCar" src="https://cdn.webmotors.com.br/webmotors/Content/assets/img/car_icon_gray.svg" alt="logo da empresa web motors"/>
               <div>
-                <p className="textComprar">COMPRAR</p>
+                <S.TextComprar>COMPRAR</S.TextComprar>
                 <p>CARROS</p>
               </div>
             </S.AdFlex>
           </S.TagA>
-          <S.TagA if={active} onClick={ativar} href="https://">
+          <S.TagA if={activeMoto} onClick={() => ativar(false, true)}>
             <S.AdFlex className="ad moto">
               <S.MotoCar className="MotoCar" src="https://cdn.webmotors.com.br/webmotors/Content/assets/img/bike_icon_gray.svg" alt="logo da empresa web motors"/>
               <div>
-                <p className="textComprar">COMPRAR</p>
+                <S.TextComprar>COMPRAR</S.TextComprar>
                 <p>MOTOS</p>
               </div>
             </S.AdFlex>
           </S.TagA>
         </S.BoxEscolher>
-        <a className="vender"href="http">
-          <p className="venderCarro">Vender meu carro</p>
-        </a>
+        
+        <S.Vender className="vender"href="http">
+          <S.VenderCarro className="venderCarro">Vender meu carro</S.VenderCarro>
+        </S.Vender>
       </S.BoxComponent>
       <BoxConfigurar />
     </S.Box>
