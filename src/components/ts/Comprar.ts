@@ -1,32 +1,49 @@
 import styled from 'styled-components';
 
+interface Props {
+  if: boolean;
+}
+
 export const Box = styled.div `
   margin: 0;
   text-decoration: none;
 `;
 
-export const ativar = styled.
+export const TagA = styled.a<Props>`
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0;
+  border-bottom: ${(props) => props.if && `3px solid red`}
+`;
 
-/* 
+export const BoxComponent = styled.div `
+  display: flex;
+  justify-content: space-between;
+`;
 
-.box {
-  width: 933px;
-  height: 312px;
-  margin: 10px auto;
-  border: 1px solid silver;
-}
-
-.ativar {
-  border-bottom: 3px solid red;
-}
-
-.boxEscolher {
+export const BoxEscolher = styled.div `
   margin-top: 20px;
   display: flex;
-}
+`;
 
-.ad {
+export const AdFlex = styled.div `
   display: flex;
+`;
+
+export const MotoCar = styled.img `
+  padding-top: 17px;
+  margin: 0 15px;
+  height: 14px;
+`;
+
+export const Logo = styled.img `
+  width: 180px;
+  height: 50px;
+`;
+
+/* 
+.ativar {
+  border-bottom: 3px solid red;
 }
 
 a {
@@ -35,24 +52,8 @@ a {
   margin: 0;
 }
 
-.motoCar {
-  padding-top: 17px;
-  margin: 0 15px;
-  height: 14px;
-}
-
-.logo {
-  width: 180px;
-  height: 50px;
-}
-
 .textComprar {
   font: 10px Arial;
-}
-
-.boxComponent {
-  display: flex;
-  justify-content: space-between;
 }
 
 .vender {
